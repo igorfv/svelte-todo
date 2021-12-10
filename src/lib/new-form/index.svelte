@@ -1,4 +1,7 @@
 <script lang="ts">
+  import { goto } from '$app/navigation';
+  import { addNewList } from '$lib/lists'
+
   let listName = ""
 
   let isNameRequired = false
@@ -11,7 +14,8 @@
   }
 
   const handleSubmit = () => {
-    console.log('YAY')
+    const listId = addNewList(listName)
+    goto(`/list/${listId}`)
   }
 </script>
 
