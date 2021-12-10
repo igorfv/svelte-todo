@@ -52,9 +52,12 @@ export const getList = (index: number): List => {
   return list
 }
 
-export const saveList = (index: number, list: List): void => {
+export const updateListTasks = (index: number, tasks: Task[]): void => {
   const lists = getLists()
-  lists[index] = list
 
+  const list = lists[index]
+  list.tasks = tasks
+
+  lists[index] = list
   saveLists(lists)
 }

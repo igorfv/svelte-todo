@@ -13,7 +13,7 @@
 <div class="flex flex-col h-full">
   <Header />
 
-  <div class="grow h-full">
+  <div class="flex-auto">
     <main class="max-w-screen-xl mx-auto h-full">
       <div class="mx-4 h-full">
         <slot />

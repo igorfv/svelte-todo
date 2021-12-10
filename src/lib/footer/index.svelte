@@ -2,7 +2,7 @@
   import GitHub from './GitHub-Mark-Light-32px.png'
 </script>
 
-<header class="bg-teal-600 border-b border-slate-400 mt-8 pt-20 pb-4 shadow-md">
+<footer class="bg-teal-600 border-b border-slate-400 mt-8 pt-20 pb-4 shadow-md">
   <div class="max-w-screen-xl mx-auto">
     <div class="mx-4">
       <p class="flex justify-center">
@@ -10,4 +10,4 @@
       </p>
     </div>
   </div>
-</header>
+</footer>
