@@ -1,6 +1,6 @@
 <script>
-  import Header from '../libs/header/index.svelte';
-  import Footer from '../libs/footer/index.svelte';
+  import Header from '$lib/header/index.svelte';
+  import Footer from '$lib/footer/index.svelte';
   import '../app.css';
 </script>
 

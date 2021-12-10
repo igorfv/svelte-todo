@@ -12,7 +12,6 @@ const config = {
     adapter: adapter(),
     hydrate: true,
     ssr: true,
-    target: '#svelte',
   },
 };
 
