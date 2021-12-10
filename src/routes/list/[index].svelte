@@ -25,6 +25,10 @@
   })
 </script>
 
+<svelte:head>
+	<title>TODO: {list && list.name || 'unknown'}</title>
+</svelte:head>
+
 
 {#if list}
   <ListView {index} name={list.name} tasks={list.tasks} />
