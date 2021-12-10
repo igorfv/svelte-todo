@@ -1,9 +1,10 @@
 <script lang="ts">
   import { onMount } from 'svelte'
   import { browser } from '$app/env';
-  import { getLists, Card } from '$lib/lists'
+  import { getLists } from '$lib/lists'
+  import type { List } from '$lib/lists'
 
-  let cards: Card[] = []
+  let cards: List[] = []
 
   onMount(() => {
     if (!browser) return

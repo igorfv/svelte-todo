@@ -1,6 +1,6 @@
 const listsKey = 'lists'
 
-export interface Card {
+export interface List {
   name: string
   tasks: Task[]
 }
@@ -10,7 +10,7 @@ export interface Task {
   done: boolean
 }
 
-export const getLists = (): Card[] => {
+export const getLists = (): List[] => {
  if (!localStorage) throw new Error("No localStorage")
 
  let lists: string | null
@@ -23,7 +23,7 @@ export const getLists = (): Card[] => {
  return JSON.parse(lists)
 }
 
-export const saveLists = (lists: Card[]): void => {
+export const saveLists = (lists: List[]): void => {
   if (!localStorage) throw new Error("No localStorage")
 
   try {
@@ -43,4 +43,18 @@ export const addNewList = (name: string): number => {
   saveLists(lists)
 
   return newIndex
+}
+
+export const getList = (index: number): List => {
+  const lists = getLists()
+  const list = lists[index]
+
+  return list
+}
+
+export const saveList = (index: number, list: List): void => {
+  const lists = getLists()
+  lists[index] = list
+
+  saveLists(lists)
 }

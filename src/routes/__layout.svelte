@@ -14,8 +14,8 @@
   <Header />
 
   <div class="grow h-full">
-    <main class="max-w-screen-xl mx-auto">
-      <div class="mx-4">
+    <main class="max-w-screen-xl mx-auto h-full">
+      <div class="mx-4 h-full">
         <slot />
       </div>
     </main>
