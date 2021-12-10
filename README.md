@@ -1,5 +1,7 @@
 # TODO app but built with Svelte
 
+I wanted to check Svelte and Tailwind
+
 
 ## Run locally
 1. Install yarn - `npm i -g yarn`
