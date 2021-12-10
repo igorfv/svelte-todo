@@ -16,7 +16,6 @@
   <div class="grow h-full">
     <main class="max-w-screen-xl mx-auto">
       <div class="mx-4">
-        aaa
         <slot />
       </div>
     </main>
