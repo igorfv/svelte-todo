@@ -1,6 +1,6 @@
 <script lang="ts">
   import { goto } from '$app/navigation';
-  import { addNewList } from '$lib/lists'
+  import { addNewList, getLists } from '$lib/lists'
 
   let listName = ""
 
@@ -14,6 +14,11 @@
   }
 
   const handleSubmit = () => {
+    const lists = getLists()
+
+    const similarIndex = lists.findIndex((list) => list.name === listName)
+    if (similarIndex >= 0) return goto(`/list/${similarIndex}`)
+
     const listId = addNewList(listName)
     goto(`/list/${listId}`)
   }
