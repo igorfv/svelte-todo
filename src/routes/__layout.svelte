@@ -1,12 +1,26 @@
 <script>
   import Header from '../libs/header/index.svelte';
+  import Footer from '../libs/footer/index.svelte';
   import '../app.css';
 </script>
 
-<Header />
+<style global lang="postcss">
+  html, body {
+    @apply min-h-full h-full;
+  }
+</style>
 
-<main class="max-w-screen-xl mx-auto">
-  <div class="mx-4">
-    <slot />
+<div class="flex flex-col h-full">
+  <Header />
+
+  <div class="grow h-full">
+    <main class="max-w-screen-xl mx-auto">
+      <div class="mx-4">
+        aaa
+        <slot />
+      </div>
+    </main>
   </div>
-</main>
+
+  <Footer />
+</div>
