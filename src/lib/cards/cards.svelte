@@ -31,7 +31,9 @@
     <a class="group" href={`/list/${index}`}>
       <div class="card">
         {card.name}
-        <span class="card-info">{card.tasks.filter((task) => task.done).length} out of {card.tasks.length}</span>
+        {#if card.tasks.length > 0}
+          <span class="card-info">{card.tasks.filter((task) => task.done).length} out of {card.tasks.length}</span>
+        {/if}
       </div>
     </a>
   {/each}
