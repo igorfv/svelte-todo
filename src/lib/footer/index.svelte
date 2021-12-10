@@ -6,7 +6,7 @@
   <div class="max-w-screen-xl mx-auto">
     <div class="mx-4">
       <p class="flex justify-center">
-        <a href="https://github.com/igorfv/svelte-todo" title="Check the code on github"><img src={GitHub} width="32" alt="Github logo"></a>
+        <a href="https://github.com/igorfv/svelte-todo" title="Check the code on github"><img src={GitHub} width="32" height="32" alt="Github logo"></a>
       </p>
     </div>
   </div>
